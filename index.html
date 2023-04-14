@@ -144,6 +144,11 @@
                     <i class="bi bi-envelope-fill text-secondary"></i>
                   </span>
                   <input type="text" id="email" class="form-control" placeholder="e.g. mario@example.com" />
+                  <span class="input-group-text">
+                    <span class="tt" data-bs-placement="bottom" title="Pretty self explanatory really...">
+                      <i class="bi bi-question-circle text-muted"></i>
+                    </span>
+                  </span>
                 </div>
                 <label for="name" class="form-label">Name:</label>
                 <div class="input-group mb-4">
@@ -151,7 +156,13 @@
                     <i class="bi bi-person-fill text-secondary"></i>
                   </span>
                   <input type="text" id="email" class="form-control" placeholder="e.g. Mario" />
+                  <span class="input-group-text">
+                    <span class="tt" data-bs-placement="bottom" title="Pretty self explanatory really...">
+                      <i class="bi bi-question-circle text-muted"></i>
+                    </span>
+                  </span>
                 </div>
+
                 <label for="subject" class="form-label">What is your question about?</label>
                 <div class="mb-4 input-group">
                   <span class="input-group-text">
@@ -162,6 +173,7 @@
                     <option value="content">Content query</option>
                     <option value="other">Other query</option>
                   </select>
+                  <span />
                 </div>
                 <div class="mb-4 mt-5 form-floating">
                   <textarea class="form-control" id="query" style="height: 140px" placeholder="query"></textarea>
@@ -182,6 +194,12 @@
 
 
       <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+      <script>
+        const tooltips = document.querySelectorAll('.tt')
+        tooltips.forEach(t => {
+          new bootstrap.Tooltip(t)
+        })
+      </script>
 </body>
 
 </html>
