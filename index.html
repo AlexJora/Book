@@ -81,10 +81,10 @@
             <div class="card-body text-center py-4">
               <h4 class="card-title">Starter Edition</h4>
               <p class="lead card-subtitle">eBook download only</p>
-              <p class="display-5 my-4 text-primary fw-bold">R300</p>
+              <p class="display-5 my-4 text-danger fw-bold">R300</p>
               <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing
                 elit. Mollitia, vitae magni! Repellat commodi a fuga corporis saepe dolorum.</p>
-              <a href="#" class="btn btn-outline-primary btn-lg mt-3">
+              <a href="#" class="btn btn-outline-danger btn-lg mt-3">
                 Buy Now
               </a>
             </div>
@@ -96,10 +96,10 @@
             <div class="card-body text-center py-5">
               <h4 class="card-title">Complete Edition</h4>
               <p class="lead card-subtitle">eBook download & all updates</p>
-              <p class="display-4 my-4 text-primary fw-bold">R250</p>
+              <p class="display-4 my-4 text-danger fw-bold">R250</p>
               <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing
                 elit. Mollitia, vitae magni! Repellat commodi a fuga corporis saepe dolorum.</p>
-              <a href="#" class="btn btn-outline-primary btn-lg mt-3">
+              <a href="#" class="btn btn-outline-danger btn-lg mt-3">
                 Buy Now
               </a>
             </div>
@@ -110,10 +110,10 @@
             <div class="card-body text-center py-4">
               <h4 class="card-title">Ultimate Edition</h4>
               <p class="lead card-subtitle">download, updates & extras</p>
-              <p class="display-5 my-4 text-primary fw-bold">R200</p>
+              <p class="display-5 my-4 text-danger fw-bold">R200</p>
               <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing
                 elit. Mollitia, vitae magni! Repellat commodi a fuga corporis saepe dolorum.</p>
-              <a href="#" class="btn btn-outline-primary btn-lg mt-3">
+              <a href="#" class="btn btn-outline-danger btn-lg mt-3">
                 Buy Now
               </a>
             </div>
@@ -130,16 +130,33 @@
       <!-- contact form -->
       <section id="contact">
         <div class="container-lg">
-
           <div class="text-center">
             <h2>Get in Touch</h2>
             <p class="lead">Questions to ask? Fill out the form to contact me directly...</p>
           </div>
           <div class="row justify-content-center my-5">
             <div class="col-lg-6">
-
               <form>
-
+                <label for="email" class="form-label">Email address:</label>
+                <div class="input-group mb-4">
+                  <input type="text" id="email" class="form-control" placeholder="e.g. mario@example.com" />
+                </div>
+                <label for="name" class="form-label">Name:</label>
+                <div class="input-group mb-4">
+                  <input type="text" id="email" class="form-control" placeholder="e.g. Mario" />
+                </div>
+                <label for="subject" class="form-label">What is your question about?</label>
+                <div class="mb-4 input-group">
+                  <select class="form-select" id="subject">
+                    <option value="pricing" selected>Pricing query</option>
+                    <option value="content">Content query</option>
+                    <option value="other">Other query</option>
+                  </select>
+                </div>
+                <div class="mb-4 mt-5 form-floating">
+                  <textarea class="form-control" id="query" style="height: 140px" placeholder="query"></textarea>
+                  <label for="query">Your query...</label>
+                </div>
               </form>
             </div>
           </div>
