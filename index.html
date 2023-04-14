@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <title>Book</title>
 </head>
 
@@ -139,14 +140,23 @@
               <form>
                 <label for="email" class="form-label">Email address:</label>
                 <div class="input-group mb-4">
+                  <span class="input-group-text">
+                    <i class="bi bi-envelope-fill text-secondary"></i>
+                  </span>
                   <input type="text" id="email" class="form-control" placeholder="e.g. mario@example.com" />
                 </div>
                 <label for="name" class="form-label">Name:</label>
                 <div class="input-group mb-4">
+                  <span class="input-group-text">
+                    <i class="bi bi-person-fill text-secondary"></i>
+                  </span>
                   <input type="text" id="email" class="form-control" placeholder="e.g. Mario" />
                 </div>
                 <label for="subject" class="form-label">What is your question about?</label>
                 <div class="mb-4 input-group">
+                  <span class="input-group-text">
+                    <i class="bi bi-chat-right-dots-fill text-secondary"></i>
+                  </span>
                   <select class="form-select" id="subject">
                     <option value="pricing" selected>Pricing query</option>
                     <option value="content">Content query</option>
